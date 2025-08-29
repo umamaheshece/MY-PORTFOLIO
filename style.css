@@ -1,0 +1,164 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Montserrat', sans-serif;
+    }
+   
+    body {
+      display: flex;
+      height: 100vh;
+      overflow:hidden;
+      background: url('images/background\ wallpaper-portfolio.jpg') no-repeat center center/cover;
+      color: #ffffff;
+      overflow-y: auto;
+      scroll-behavior: smooth;
+      overflow-y: auto;
+    }
+    .sidebar {
+      width: 280px;
+      background: rgba(0,0,0,0.8);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 20px;
+      height: 100vh;
+      overflow-y: auto;
+    }
+    .sidebar img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 4px solid #00c9a7;
+      box-shadow: 0 0 20px rgba(0,201,167,0.3);
+      margin-bottom: 20px;
+    }
+    .sidebar h1 {
+      font-size: 1.6rem;
+      margin-bottom: 30px;
+      color: #00c9a7;
+      text-align: center;
+    }
+    .sidebar nav {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 100vh;
+    }
+    .sidebar nav a {
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 500;
+      padding: 12px;
+      text-align: center;
+      border-radius: 8px;
+      transition: all 0.3s;
+      margin-bottom: 10px;
+    }
+    .sidebar nav a:hover {
+      background: #00c9a7;
+      color: #000;
+    }
+   .main-content {
+      flex: 1;
+      overflow-y: auto;
+      scroll-behavior: smooth;
+      min-height: 100vh;
+   }
+    
+    section {
+      padding: 60px 10% 80px;
+      background: rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(10px);
+      margin: 40px auto;
+      border-radius: 20px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.3);
+      display: none;
+      animation: fadeIn 1s ease-in-out forwards;
+      max-width: 1000px;
+       scroll-behavior: smooth;
+       overflow: visible;
+       min-height: auto;
+    }
+    section.active {
+      display: block;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .section-title {
+      font-size: 2.5rem;
+      margin-bottom: 30px;
+      text-align: center;
+      color: #00c9a7;
+    }
+    .content {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      align-items:center;
+      justify-content: center;
+      box-sizing: border-box;
+      overflow: hidden;
+    }
+    .split-left, .split-right {
+      flex: 1;
+      min-width: 300px;
+      min-height: 100%;
+    }
+    .split-left img, .split-right img {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    }
+    .split-right ul, .split-right p {
+      color: #eee;
+    }
+    .project, .internship, .resume, .contact {
+      background: rgba(0,0,0,0.5);
+      padding: 20px;
+      border-radius: 12px;
+      text-align: center;
+      width: 100%;
+    }
+    .project strong {
+      display: block;
+      margin: 15px 0 5px;
+      color: #2af598;
+    }
+    .resume a, .contact a {
+      color: #00c9a7;
+      text-decoration: underline;
+    }
+    marquee {
+  padding: 10px 0;
+  font-size: 24px;
+  font-weight: bold;
+  color: #00c9a7;
+  text-shadow: 1px 1px 2px #000;
+}
+.circle-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #00c9a7;
+  box-shadow: 0 0 15px rgba(0, 201, 167, 0.4);
+}
+.square-image {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 16px; /* Rounded corners for style */
+  padding: 5px;
+  background: linear-gradient(135deg, #00c9a7, #2af598); /* Gradient border */
+  box-shadow: 
+    0 0 15px rgba(0, 201, 167, 0.5),
+    0 0 30px rgba(42, 245, 152, 0.3);
+    gap: 40px;
+}
+section img{
+  height: auto;
+  width:auto
+}
